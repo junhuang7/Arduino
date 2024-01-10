@@ -1,11 +1,10 @@
 void setup() {
-  pinMode(LED_BUILTIN, OUTPUT);   // Set the digital pin 7 as output
-  digitalWrite(LED_BUILTIN, HIGH); // Send a high signal
-  delay(1000);            // Wait for 1000 milliseconds
-  digitalWrite(LED_BUILTIN, LOW);  // Send a low signal
+  pinMode(LED_BUILTIN, OUTPUT);  // Set the digital pin 7 as output
 }
 
 void loop() {
-  // Do nothing, or you could implement an infinite loop
-  // while(1) {}
+  digitalWrite(LED_BUILTIN, HIGH);   // Send a high signal
+  delay(1000);             // Wait for 1 second
+  digitalWrite(LED_BUILTIN, LOW);    // Send a low signal
+  delay(1000);             // Wait for 1 second
 }
